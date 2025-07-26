@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 2rem;
-      background-color: #f9d7cc; /* lighter tint of #EFA18A */
+      background-color: #e6f0ef; /* very light peacock green */
       font-family: Arial, sans-serif;
       color: #333;
       line-height: 1.6;
@@ -129,6 +129,9 @@
         margin-left: 1rem;
       }
     }
+
+    /* Remove duplicate body style from later style block */
+    /* Make sure no other style overrides background */
   </style>
 </head>
 
@@ -144,8 +147,6 @@
   </nav>
 
   <!-- Header -->
- </head>
-<body style="margin:0; font-family:Arial,sans-serif;">
   <div style="
       position: relative;
       background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
@@ -188,115 +189,107 @@
     </div>
   </div>
 
-<div class="section">
-  <h3>📸 App</h3>
+  <div class="section">
+    <h3>📸 App</h3>
+    <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 1rem;
+      ">
+      <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/81357612a4b6cb59936ee1f88410b189750238af/oldland.png" alt="Landingpage" style="width:100%; border-radius:10px;">
+      <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/0c1d5e3772c17f6ff7fbf82d5392c2a0b19612e0/otherla.png" alt="flow" style="width:100%; border-radius:10px;">
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="tab">
+      <h3>🔍 Problem Overview</h3>
+      <ul>
+        <li>❌ The app often fails to accurately identify plants, leading users to receive incorrect information and potentially harming their plant care routines.</li>
+        <li>🧪 Users have reported receiving incorrect or even damaging care advice from the app, resulting in unhealthy or dying plants despite following instructions.</li>
+        <li>💸 Many users are confused by unclear subscription terms and have been unexpectedly charged without realizing they were signing up for a paid plan.</li>
+        <li>🔒 The cancellation and refund processes are complicated and not user-friendly, making it difficult for users to stop charges or get their money back.</li>
+        <li>📞 Customer support is often slow, unresponsive, or unavailable, leaving users without help when they face issues with the app or their subscriptions.</li>
+        <li>⚠️ Frequent crashes, bugs, and unreliable notifications make the app frustrating to use and reduce its reliability for timely plant care.</li>
+        <li>🎭 The app’s free trial terms are misleading, often causing users to be charged once the trial ends without clear communication or reminders.</li>
+        <li>💰 Premium features are aggressively pushed throughout the app experience, making users feel pressured to pay rather than enjoy the free content.</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="section" style="display: flex; gap: 2rem; width: 100vw; align-items: stretch;">
   <div style="
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 1rem;
-    ">
-    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/81357612a4b6cb59936ee1f88410b189750238af/oldland.png" alt="Landingpage" style="width:100%; border-radius:10px;">
-    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/0c1d5e3772c17f6ff7fbf82d5392c2a0b19612e0/otherla.png" alt="flow" style="width:100%; border-radius:10px;">
+      flex: 1; 
+      font-size: 1.15rem; 
+      line-height: 1.6; 
+      padding: 1rem 0; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      height: 100%;
+  ">
+    <h3 style="margin-top: 0; margin-bottom: 1rem;">🛤️ Userflow</h3>
+    <p style="margin: 0;">
+      For me, an effective user flow in a plant care app needs to be smooth and intuitive, guiding users from their first interaction all the way through ongoing use. It starts by gathering user preferences and experience levels so the app can deliver personalized, relevant content.
+
+      The heart of the flow is accurate plant identification it has to be simple and reliable so users feel confident. Once plants are identified, the flow helps users create detailed profiles with care needs, environment info, and growth tracking, which then powers timely, actionable advice.
+
+      It’s also important to include ongoing health monitoring so users can catch issues early and get adaptive tips. Adding community features encourages users to share, learn, and support each other, making the experience more engaging.
+
+      Subscription options should be clear and easy to access without interrupting the main experience. And of course, a solid feedback loop helps the app keep improving based on what users need. Overall, I see this user flow as a way to create a clear, personalized, and supportive environment that helps plant lovers thrive at every step.
+    </p>
+  </div>
+  <div style="flex: 1; display: flex; align-items: center; height: 100%;">
+    <img 
+      src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/9086d97771fc8bdcb486c868c37f4459745f30c8/Userflow.png" 
+      alt="Flow" 
+      style="width: 100%; height: 100%; border-radius: 8px; object-fit: contain; display: block;"
+    />
   </div>
 </div>
 
 <div class="section">
-  <div class="tab">
-    <h3>🔍 Problem Overview</h3>
-    <ul>
-      <li>❌ The app often fails to accurately identify plants, leading users to receive incorrect information and potentially harming their plant care routines.</li>
-      <li>🧪 Users have reported receiving incorrect or even damaging care advice from the app, resulting in unhealthy or dying plants despite following instructions.</li>
-      <li>💸 Many users are confused by unclear subscription terms and have been unexpectedly charged without realizing they were signing up for a paid plan.</li>
-      <li>🔒 The cancellation and refund processes are complicated and not user-friendly, making it difficult for users to stop charges or get their money back.</li>
-      <li>📞 Customer support is often slow, unresponsive, or unavailable, leaving users without help when they face issues with the app or their subscriptions.</li>
-      <li>⚠️ Frequent crashes, bugs, and unreliable notifications make the app frustrating to use and reduce its reliability for timely plant care.</li>
-      <li>🎭 The app’s free trial terms are misleading, often causing users to be charged once the trial ends without clear communication or reminders.</li>
-      <li>💰 Premium features are aggressively pushed throughout the app experience, making users feel pressured to pay rather than enjoy the free content.</li>
-    </ul>
+  <h3>🖍 Wireframes & Key Design Fixes</h3>
+  <ul>
+    <li>✅ Improved Plant Scanning Flow with user confirmation and secondary verification</li>
+    <li>🔁 Transparent Subscription UX, including billing info upfront and cancel-anytime prompts</li>
+    <li>🧾 Receipts & Reminders to avoid surprise charges</li>
+    <li>💬 In-app Support Bot + Live Chat for instant help</li>
+    <li>🌐 Streamlined Care Advice Dashboard showing daily, weekly, and emergency actions</li>
+    <li>🚫 Removed pop-up upsells that interrupt plant scanning</li>
+  </ul>
+  <div class="images" style="
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+    width: 100vw;
+    max-width: 100vw;
+  ">
+    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/7bb61899d590b51a1e4b674fbc78fc4b5a4b2bb1/Wireframe.png" alt="Wireframe" style="width: 100%; border-radius: 8px;">
+    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/61a3863f7c08e8e0b8717c993398835e7443a1cf/protoLanding.png" alt="Prototype" style="width: 100%; border-radius: 8px;">
+    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/18c25ddcd246c69db046f3be3bde8a15b6ce4cc5/High%20fidiality.png" alt="High Fidelity Frame" style="width: 100%; border-radius: 8px;">
   </div>
 </div>
-  
- <div class="section">
-    <h3> 🛤️ Userflow </h3>
-    <ul>
-       <p>The indoor plant health care app guides users from onboarding—where they set preferences and experience level—to accurately identifying plants via photos or selections, creating detailed plant profiles with care needs, and receiving personalized daily to monthly care instructions. Users can log plant health, allowing the app to detect issues early and offer advice. A community feature enables sharing and support, while clear subscription plans provide premium features with easy cancellation. Feedback mechanisms ensure continuous improvement. This flow offers reliable, simple, and supportive plant care for users of all skill levels.</p>
-    </ul>
-    <div class="images">
-    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/9086d97771fc8bdcb486c868c37f4459745f30c8/Userflow.png" alt="Flow">
-    </div>
+
+  <div class="section" style="display: flex; gap: 2rem; width: 100vw; align-items: stretch;">
+  <div style="flex: 1; display: flex; align-items: center; height: 100%;">
+    <img 
+      src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/3cea1366bb6311370c17794558fcf2030e80ad6c/Landingpg.png" 
+      alt="Visual Identity Design" 
+      style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px; display: block;"
+    />
   </div>
-  
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    h3 {
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-      font-size: 16px;
-    }
-
-    .images {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .images img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-
-    @media (max-width: 768px) {
-      .images {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="section">
-    <h3>🖍 Wireframes & Key Design Fixes</h3>
-    <ul>
-      <li>✅ Improved Plant Scanning Flow with user confirmation and secondary verification</li>
-      <li>🔁 Transparent Subscription UX, including billing info upfront and cancel-anytime prompts</li>
-      <li>🧾 Receipts & Reminders to avoid surprise charges</li>
-      <li>💬 In-app Support Bot + Live Chat for instant help</li>
-      <li>🌐 Streamlined Care Advice Dashboard showing daily, weekly, and emergency actions</li>
-      <li>🚫 Removed pop-up upsells that interrupt plant scanning</li>
-    </ul>
-    <div class="images">
-      <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/7bb61899d590b51a1e4b674fbc78fc4b5a4b2bb1/Wireframe.png" alt="Wireframe">
-      <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/61a3863f7c08e8e0b8717c993398835e7443a1cf/protoLanding.png" alt="Prototype">
-      <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/18c25ddcd246c69db046f3be3bde8a15b6ce4cc5/High%20fidiality.png" alt="High Fidelity Frame">
-    </div>
+  <div style="flex: 1; font-size: 1.15rem; line-height: 1.6; padding: 1rem 0; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+    <h3 style="margin-top: 0; margin-bottom: 1rem;">🎨 Visual Identity</h3>
+    <p style="margin: 0;">
+      For this landing page, I chose calming greens and soft neutrals to bring that fresh, natural vibe. The rounded UI elements make the app feel friendly and approachable, not cold or overly techy. Overall, it’s designed to be nurturing and easy on the eyes.
+    </p>
   </div>
-  
+</div>
 
-  <div class="section">
-    <h3>🎨 Visual Identity</h3>
-    <p>Calming greens and soft neutrals to reflect plant life and reduce cognitive fatigue. Rounded, friendly UI components to feel less “techy” and more “nurturing.”</p>
-    <div class="visuals">
-    <img src="https://raw.githubusercontent.com/valluripalli27/Case-study--plant/3cea1366bb6311370c17794558fcf2030e80ad6c/Landingpg.png" alt="Visual Identity Design">
-    </div>
-  </div>
-<!-- Footer -->
+
+  <!-- Footer -->
   <footer>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
