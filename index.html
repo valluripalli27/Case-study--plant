@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlantIn UX Redesign</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9d7cc; /* lighter tint of #EFA18A */
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Nav */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #efa18a;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .nav-left {
+      font-size: 1.2rem;
+    }
+
+    .nav-right a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-top: 0;
+      color: #555;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .tab {
+      background-color: #8a9a4e;
+      padding: 20px;
+      border-radius: 10px;
+      font-style: italic;
+      color: white;
+    }
+
+    .tab ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .tab li {
+      margin-bottom: 10px;
+    }
+
+    .images {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .visuals img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .images {
+        flex-direction: column;
+      }
+
+      .nav-right a {
+        margin-left: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav>
+    <div class="nav-left">Lakshmi</div>
+    <div class="nav-right">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+ </head>
+<body style="margin:0; font-family:Arial,sans-serif;">
+  <div style="
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    ">
+    <div style="
+        position: absolute;
+        top:0; left:0; right:0; bottom:0;
+        background: rgba(255,255,255,0.5);
+        z-index:1;
+      "></div>
+    <div style="position:relative; z-index:2; color:#333;">
+      <h1 style="font-size:48px; margin-bottom:10px;">🌱 Plant Health Companion</h1>
+      <h2 style="font-size:24px; font-weight:normal;">UX Case Study Website Redesign</h2>
+    </div>
+  </div>
+
+  <div class="section grid-2">
+    <div>
+      <h3>🎯 Goal</h3>
+      <p>
+        Redesign the PlantIn experience with an emphasis on trust, accuracy, transparency, and simplicity, ensuring both new and existing users feel supported and empowered in their plant-care journey.
+      </p>
+    </div>
+    <div>
+      <h3>🧭 My Role</h3>
+      <ul>
+        <li>UX Research</li>
+        <li>User Flow Redesign</li>
+        <li>Wireframing & Prototyping</li>
+        <li>Visual UI Redesign</li>
+        <li>Accessibility Improvements</li>
+      </ul>
+    </div>
+  </div>
+
+ <style>
+  .section h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .tab {
+    background-color: #8a9a4e; /* darker olive green */
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    color: white;
+  }
+
+  .tab h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .tab ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .tab li {
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="section">
+  <div class="tab">
+    <h3>🔍 Problem Overview</h3>
+    <ul>
+      <li>❌ The app often fails to accurately identify plants, leading users to receive incorrect information and potentially harming their plant care routines.</li>
+      <li>🧪 Users have reported receiving incorrect or even damaging care advice from the app, resulting in unhealthy or dying plants despite following instructions.</li>
+      <li>💸 Many users are confused by unclear subscription terms and have been unexpectedly charged without realizing they were signing up for a paid plan.</li>
+      <li>🔒 The cancellation and refund processes are complicated and not user-friendly, making it difficult for users to stop charges or get their money back.</li>
+      <li>📞 Customer support is often slow, unresponsive, or unavailable, leaving users without help when they face issues with the app or their subscriptions.</li>
+      <li>⚠️ Frequent crashes, bugs, and unreliable notifications make the app frustrating to use and reduce its reliability for timely plant care.</li>
+      <li>🎭 The app’s free trial terms are misleading, often causing users to be charged once the trial ends without clear communication or reminders.</li>
+      <li>💰 Premium features are aggressively pushed throughout the app experience, making users feel pressured to pay rather than enjoy the free content.</li>
+    </ul>
+  </div>
+</div>
+
+  <div class="section">
+    <h3>🖍 Wireframes & Key Design Fixes</h3>
+    <ul>
+      <li>✅ Improved Plant Scanning Flow with user confirmation and secondary verification</li>
+      <li>🔁 Transparent Subscription UX, including billing info upfront and cancel-anytime prompts</li>
+      <li>🧾 Receipts & Reminders to avoid surprise charges</li>
+      <li>💬 In-app Support Bot + Live Chat for instant help</li>
+      <li>🌐 Streamlined Care Advice Dashboard showing daily, weekly, and emergency actions</li>
+      <li>🚫 Removed pop-up upsells that interrupt plant scanning</li>
+    </ul>
+    <div class="images">
+      <img src="wireframe1.png" alt="Wireframe 1">
+      <img src="wireframe2.png" alt="Wireframe 2">
+      <img src="wireframe3.png" alt="Wireframe 3">
+    </div>
+  </div>
+  
+  
+  <div class="section">
+    <h3> 🛤️ Userflow </h3>
+    <ul>
+       <p>The indoor plant health care app guides users from onboarding—where they set preferences and experience level—to accurately identifying plants via photos or selections, creating detailed plant profiles with care needs, and receiving personalized daily to monthly care instructions. Users can log plant health, allowing the app to detect issues early and offer advice. A community feature enables sharing and support, while clear subscription plans provide premium features with easy cancellation. Feedback mechanisms ensure continuous improvement. This flow offers reliable, simple, and supportive plant care for users of all skill levels.</p>
+    </ul>
+    <div class="images">
+      <img src="wireframe1.png" alt="Wireframe">
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>🎨 Visual Identity</h3>
+    <p>Calming greens and soft neutrals to reflect plant life and reduce cognitive fatigue. Rounded, friendly UI components to feel less “techy” and more “nurturing.”</p>
+    <div class="visuals">
+      <img src="visual-identity.png" alt="Visual Identity Design">
+    </div>
+  </div>
+<!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/YOUR-USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://medium.com/@YOUR-USERNAME" target="_blank"><i class="fab fa-medium"></i></a>
+      <a href="mailto:yourname@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
